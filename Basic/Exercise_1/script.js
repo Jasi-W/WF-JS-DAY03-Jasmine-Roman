@@ -1,6 +1,6 @@
 
 
-/*-- Exercise 1 --*/
+/*-- Basic Exercise 1 --*/
 var elementNode = document.getElementById("birthdate");
 elementNode.addEventListener("change", calculateYears, true);
 
@@ -15,7 +15,7 @@ var startDate = new Date(),
 	document.getElementById("years").innerHTML = years;
 }
 
-/*-- Exercise 2 --*/
+/*-- Basic Exercise 2 --*/
 
 var exercise2Node = document.getElementById("cutter");
 	exercise2Node.addEventListener("click", abschneider, true);
@@ -28,4 +28,5 @@ var exercise2Node = document.getElementById("cutter");
 
 		document.getElementById("textoutput").innerHTML = finaltext;
 	}
-/*-- Exercise 2 --*/
+	
+/*-- Intermediate Exercise 2 --*/
