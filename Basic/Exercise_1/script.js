@@ -56,10 +56,60 @@ var personalNode = document.getElementById("btnBasic3");
 
 /*-- Exercise 3 --*/
 	
-/*-- Intermediate Exercise 2 --*/
+/*------------------------------------------ Intermediate Exercise 2 ------------------------------*/
+
+var hotelNode0 = document.getElementById("hotel_1");
+	hotelNode0.addEventListener("change", inputCheck, true);
+
+var hotelNode1 = document.getElementById("hotel_2");
+	hotelNode1.addEventListener("change", inputCheck, true);
+
+var hotelNode2 = document.getElementById("hotel_3");
+	hotelNode2.addEventListener("change", inputCheck, true);
 
 
-
-function getRndInteger(min, max) {
-  return Math.floor(Math.random() * (max-min +1))+ min;
+function HotelConstructor(hotelname, rooms, booked){
+	this.name = hotelname;
+	this.rooms = rooms;
+	this.booked = booked;
+	this.checkFreeRooms = function(){
+		return this.rooms - this.booked;
+	};
 }
+function inputCheck(){
+
+var HotelOne = new HotelConstructor("One",10, Math.floor(Math.random() * (10-1 +1))+ 1);
+var HotelTwo = new HotelConstructor("Two",10, Math.floor(Math.random() * (10-1 +1))+ 1);
+var HotelThree = new HotelConstructor("Three", 10, Math.floor(Math.random() * (10-1 +1))+ 1);
+
+var alleHotels = [HotelOne,HotelTwo,HotelThree];
+
+
+	var allFree = [];
+	var checkOne = document.getElementById("hotel_1").value;
+	var checkTwo = document.getElementById("hotel_2").value;
+	var checkThree = document.getElementById("hotel_3").value;
+
+	if (checkOne!=0 && checkTwo !=0 && checkThree !=0){
+
+		for (i=0; i < alleHotels.length; i++){
+			allFree.push(alleHotels[i].checkFreeRooms());
+
+			let bookbtn  = document.createElement("BUTTON");
+			bookbtn.innerHTML = "book";
+			
+			//document.getElementById('result_'+(i+1)).removeChild(bookbtn);
+
+			if (alleHotels[i].checkFreeRooms()==0){
+				document.getElementById('result_'+(i+1)).innerHTML = "Sorry, no free room for " + document.getElementById("hotel_"+(i+1)).value + " nights.";
+			}else{
+					//bookbtn.id = "btnId"+i;
+				document.getElementById('result_'+(i+1)).appendChild(bookbtn);
+
+			}	
+		}
+	}	
+console.log(allFree);
+}
+
+
