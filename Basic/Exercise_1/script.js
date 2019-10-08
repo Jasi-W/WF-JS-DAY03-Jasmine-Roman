@@ -16,3 +16,18 @@ var startDate = new Date(),
 }
 
 /*-- Exercise 1 --*/
+
+/*-- Exercise 2 --*/
+
+var exercise2Node = document.getElementById("cutter");
+	exercise2Node.addEventListener("click", abschneider, true);
+
+	function abschneider(){
+		var string = document.getElementById("texttocut").value;
+		var cut = document.getElementById("cutposition").value;
+
+		finaltext = string.slice(cut);
+
+		document.getElementById("textoutput").innerHTML = finaltext;
+	}
+/*-- Exercise 2 --*/
