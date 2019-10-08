@@ -30,3 +30,4 @@ var exercise2Node = document.getElementById("cutter");
 
 		document.getElementById("textoutput").innerHTML = finaltext;
 	}
+/*-- Exercise 2 --*/
