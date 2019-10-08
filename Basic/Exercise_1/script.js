@@ -32,7 +32,6 @@ var exercise2Node = document.getElementById("cutter");
 /*-- Intermediate Exercise 2 --*/
 
 
-function getRndInteger(1, 10) {
+function getRndInteger(min, max) {
   return Math.floor(Math.random() * (max - min + 1) ) + min;
 }
-
