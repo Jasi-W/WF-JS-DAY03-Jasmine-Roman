@@ -31,3 +31,28 @@ var exercise2Node = document.getElementById("cutter");
 		document.getElementById("textoutput").innerHTML = finaltext;
 	}
 /*-- Exercise 2 --*/
+
+/*-- Exercise 3 --*/
+
+var nameI = "John";
+var surenameI = "Doe";
+var ageI = 33;
+var vitaI = "programmer";
+
+function PersonalConstructor(name, surename, age, vita){
+	this.name = name;
+	this.surename = surename;
+	this.age = age;
+	this.vita = vita;
+}
+
+function personal(){
+	var daten = new PersonalConstructor(nameI, surenameI, ageI, vitaI);
+	document.getElementById("personaloutput").innerHTML = "Hi, I am " + daten.name + " " + daten.surename+ " I am " + daten.age+ " years old and want to become a " + daten.vita;
+}
+
+var personalNode = document.getElementById("btnBasic3");
+	personalNode.addEventListener("click", personal , true);
+
+
+/*-- Exercise 3 --*/
