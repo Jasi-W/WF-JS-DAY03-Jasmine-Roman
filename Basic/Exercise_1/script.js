@@ -1,4 +1,6 @@
 
+
+/*-- Exercise 1 --*/
 var elementNode = document.getElementById("birthdate");
 elementNode.addEventListener("change", calculateYears, true);
 
@@ -12,3 +14,5 @@ var startDate = new Date(),
 	
 	document.getElementById("years").innerHTML = years;
 }
+
+/*-- Exercise 1 --*/
