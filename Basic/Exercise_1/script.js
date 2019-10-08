@@ -1,6 +1,6 @@
 
 
-/*-- Exercise 1 --*/
+/*-- Basic Exercise 1 --*/
 var elementNode = document.getElementById("birthdate");
 elementNode.addEventListener("change", calculateYears, true);
 
@@ -15,21 +15,20 @@ var startDate = new Date(),
 	document.getElementById("years").innerHTML = years;
 }
 
-/*-- Exercise 1 --*/
-
-/*-- Exercise 2 --*/
+/*-- Basic Exercise 2 --*/
 
 var exercise2Node = document.getElementById("cutter");
 	exercise2Node.addEventListener("click", abschneider, true);
 
 	function abschneider(){
-		var string = document.getElementById("texttocut").value;
+		var string = document.getElementById("textocut").value;
 		var cut = document.getElementById("cutposition").value;
 
 		finaltext = string.slice(cut);
 
 		document.getElementById("textoutput").innerHTML = finaltext;
 	}
+
 /*-- Exercise 2 --*/
 
 /*-- Exercise 3 --*/
@@ -56,3 +55,10 @@ var personalNode = document.getElementById("btnBasic3");
 
 
 /*-- Exercise 3 --*/
+	
+/*-- Intermediate Exercise 2 --*/
+
+
+function getRndInteger(min, max) {
+  return Math.floor(Math.random() * (max - min + 1) ) + min;
+}
