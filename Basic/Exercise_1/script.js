@@ -15,8 +15,6 @@ var startDate = new Date(),
 	document.getElementById("years").innerHTML = years;
 }
 
-/*-- Exercise 1 --*/
-
 /*-- Exercise 2 --*/
 
 var exercise2Node = document.getElementById("cutter");
