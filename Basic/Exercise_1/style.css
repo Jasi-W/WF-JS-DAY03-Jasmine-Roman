@@ -30,3 +30,8 @@ hr {
 	width: 30%;
 	
 }
+
+.item input {
+	width: 60px;
+	margin: 10px;
+}
