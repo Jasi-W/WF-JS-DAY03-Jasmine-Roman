@@ -1,1 +1,32 @@
 
+p	{ font-size: 1em; }
+h1	{ font-size: 2em; }
+h2	{ font-size: 1.5em; }
+h3	{ font-size: 1.2em; }
+
+* {
+	box-sizing: border-box;
+	margin: 0;
+	font-family: calibri;
+}
+
+body {
+	padding: 10px;
+}
+
+hr {
+	margin: 10px 0;
+}
+
+/*-- FLEXBOX --*/
+.flex { 
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	padding: 10px;
+}
+
+.item {
+	width: 30%;
+	
+}
