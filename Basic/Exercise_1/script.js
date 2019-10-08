@@ -21,7 +21,7 @@ var exercise2Node = document.getElementById("cutter");
 	exercise2Node.addEventListener("click", abschneider, true);
 
 	function abschneider(){
-		var string = document.getElementById("texttocut").value;
+		var string = document.getElementById("textocut").value;
 		var cut = document.getElementById("cutposition").value;
 
 		finaltext = string.slice(cut);
@@ -30,3 +30,9 @@ var exercise2Node = document.getElementById("cutter");
 	}
 	
 /*-- Intermediate Exercise 2 --*/
+
+
+function getRndInteger(1, 10) {
+  return Math.floor(Math.random() * (max - min + 1) ) + min;
+}
+

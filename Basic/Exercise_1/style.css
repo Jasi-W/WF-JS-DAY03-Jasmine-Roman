@@ -32,6 +32,7 @@ hr {
 }
 
 .item input {
-	width: 60px;
+	width: 50px;
 	margin: 10px;
+	text-align: center;
 }
